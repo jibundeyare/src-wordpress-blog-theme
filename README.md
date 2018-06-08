@@ -10,7 +10,7 @@ Il est livré avec Bootstrap 4 et les package `symfony/var-dumper` et `wp-bootst
 ## Installation
 
 1. Téléchargez le fichier zip du repository
-2. Copiez le dossier `wordpress-blog-theme` dans le dossier `wp-content/themes` de votre projet Wordpress
+2. Copiez le dossier `src-wordpress-blog-theme` dans le dossier `wp-content/themes` de votre projet Wordpress
 3. Dans l'admin de Wordpress, activez le thème dans la section « Apparence > Thèmes »
 
 ## Customisation
