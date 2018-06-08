@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/var-dumper": "^3.4",
+        "wp-bootstrap/wp-bootstrap-navwalker": "^4.0"
+    }
+}

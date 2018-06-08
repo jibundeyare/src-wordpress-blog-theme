@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.navbar-brand img {
+  width: 25px;
+}
+
+.article-thumbnail img, .article-illustration img {
+  height: auto;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
