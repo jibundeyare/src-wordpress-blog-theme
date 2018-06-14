@@ -17,6 +17,7 @@ Il est livré avec Bootstrap 4 et les package `symfony/var-dumper` et `wp-bootst
 
 Avant toute utilisation, vous devez au moins :
 
+- changer le nom du template (le nom du dossier et le nom dans le fichier `style.css`)
 - changer le nom du site, le logo et le favicon dans le fichier `header.php`
 - vérifier que les liens dans le fichier `footer.php` sont corrects
 - créer un menu nommé `main-menu` dans l'admin de Wordpress
