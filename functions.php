@@ -34,19 +34,38 @@ setlocale( LC_ALL, 'fr', 'fr_FR', 'fr_FR.utf8', 'fr_FR.ISO_8859-1' );
 
 // cette fonction se charge d'intégrer les feuilles de style du thème
 function my_theme_enqueue_styles() {
+    // affiche la liste des feuilles de style qui seront chargées
+    // $wp_styles = wp_styles();
+    // var_dump($wp_styles->queue);
+    // affiche des infos détaillées sur chaque feuille de style
+    // foreach( $wp_styles->queue as $handle ) {
+    //     var_dump($wp_styles->registered[$handle]);
+    // }
+
     // chargement de la feuille de style de Bootstrap
     wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
     // chargement de la feuille de style du thème
     wp_enqueue_style( 'my-theme-main', get_stylesheet_directory_uri().'/css/main.css', ['bootstrap'] );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+// demande à Wordpress de lancer la fonction `my_theme_enqueue_styles` durant le démarrage de l'application
+// PHP_INT_MAX est le niveau de priorité, plus ce nombre est grand et moins la priorité est élevée
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', PHP_INT_MAX );
 
 /**
  * JS
  */
 
 // cette fonction se charge d'intégrer les scripts JS du thème
-function my_theme_enqueue_script() {
+function my_theme_enqueue_scripts() {
+    // affiche la liste des scripts qui seront chargées
+    // $wp_scripts = wp_scripts();
+    // var_dump($wp_scripts->queue);
+    // affiche des infos détaillées sur chaque script
+    // foreach( $wp_scripts->queue as $handle ) {
+    //     var_dump($wp_scripts->registered[$handle]);
+    // }
+
     // chargement du script JS de Popper (une dépendance de Bootstrap)
     wp_enqueue_script( 'popper', get_stylesheet_directory_uri().'/js/popper.min.js', ['jquery'] );
     // chargement du script JS de Bootstrap
@@ -54,7 +73,10 @@ function my_theme_enqueue_script() {
     // chargement du script JS du thème
     wp_enqueue_script( 'my-theme-main', get_stylesheet_directory_uri().'/js/main.js', ['bootstrap'] );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_script' );
+
+// demande à Wordpress de lancer la fonction `my_theme_enqueue_scripts` durant le démarrage de l'application
+// PHP_INT_MAX est le niveau de priorité, plus ce nombre est grand et moins la priorité est élevée
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_scripts', PHP_INT_MAX );
 
 /**
  * menu 
