@@ -50,6 +50,7 @@ function my_theme_enqueue_styles() {
 
 // demande à Wordpress de lancer la fonction `my_theme_enqueue_styles` durant le démarrage de l'application
 // PHP_INT_MAX est le niveau de priorité, plus ce nombre est grand et moins la priorité est élevée
+// le niveau de priorité par défaut est 10
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', PHP_INT_MAX );
 
 /**
@@ -76,6 +77,7 @@ function my_theme_enqueue_scripts() {
 
 // demande à Wordpress de lancer la fonction `my_theme_enqueue_scripts` durant le démarrage de l'application
 // PHP_INT_MAX est le niveau de priorité, plus ce nombre est grand et moins la priorité est élevée
+// le niveau de priorité par défaut est 10
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_scripts', PHP_INT_MAX );
 
 /**
