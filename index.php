@@ -11,7 +11,7 @@ if ( have_posts() ):
     <article>
         <div class="row">
             <div class="col-lg-10 offset-lg-2">
-                <h1><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h1>
+                <h2><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <div><em><?php the_time( get_option( 'date_format' ) ); ?></em></div>
             </div>
         </div>
