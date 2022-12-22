@@ -5,8 +5,7 @@ get_header();
 <div class="container">
 <?php
 if ( have_posts() ):
-    while (have_posts()):
-        the_post();
+    the_post();
 ?>
     <article>
         <div class="row">
@@ -21,7 +20,6 @@ if ( have_posts() ):
         </div>
     </article>
 <?php
-    endwhile;
 endif;
 ?>
 </div>

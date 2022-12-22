@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        Copyright 2018
+                        Copyright <?php echo date('Y'); ?>
                     </div>
                     <div class="col-sm">
                         <a class="text-white" href="/mentions-legales/">Mentions légales</a>

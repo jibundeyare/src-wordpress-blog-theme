@@ -5,8 +5,7 @@ get_header();
 <div class="container">
 <?php
 if ( have_posts() ):
-    while (have_posts()):
-        the_post();
+    the_post();
 ?>
     <article>
         <div class="row">
@@ -18,9 +17,9 @@ if ( have_posts() ):
         <div class="row">
             <div class="col-sm article-illustration">
 <?php
-        if ( has_post_thumbnail() ):
-            the_post_thumbnail( 'full' );
-        endif;
+    if ( has_post_thumbnail() ):
+        the_post_thumbnail( 'full' );
+    endif;
 ?>
             </div>
         </div>
@@ -31,7 +30,6 @@ if ( have_posts() ):
         </div>
     </article>
 <?php
-    endwhile;
 endif;
 ?>
 </div>
