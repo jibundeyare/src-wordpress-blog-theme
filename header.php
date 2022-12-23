@@ -14,7 +14,7 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
                 <div class="container">
-                    <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" alt=""> Mon blog</a>
+                    <a class="navbar-brand" href="<?= site_url(); ?>"><img src="<?= get_stylesheet_directory_uri(); ?>/img/icons8-bulle.svg" alt=""> Mon blog</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-theme-navbar-collapse" aria-controls="my-theme-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

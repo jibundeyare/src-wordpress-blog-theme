@@ -24,7 +24,7 @@ if ( have_posts() ):
 ?>
             </div>
             <div class="col-lg-10">
-                <div><?php echo wp_trim_excerpt(); ?></div>
+                <div><?= wp_trim_excerpt(); ?></div>
             </div>
         </div>
     </article>
